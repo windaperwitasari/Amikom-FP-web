@@ -1,9 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
+  <title>Bootstrap 4 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
+<!--Navbar-->
+	<nav class="navbar navbar-expand-sm bg-light navbar-light">
+  		<ul class="navbar-nav">
+    		<li class="nav-item active">
+      		<a class="nav-link" href="#">Active</a>
+   			</li>
+    		<li class="nav-item">
+      		<a class="nav-link" href="#">Link</a>
+    		</li>
+    		<li class="nav-item">
+      		<a class="nav-link" href="#">Link</a>
+    		</li>
+    		<li class="nav-item">
+      		<a class="nav-link disabled" href="#">Disabled</a>
+    		</li>
+  		</ul>
+	</nav>
+
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  		<form class="form-inline" action="/action_page.php">
+    		<input class="form-control mr-sm-2" type="text" placeholder="Search">
+    		<button class="btn btn-success" type="submit">Search</button> &emsp;
+    		<button type="button" class="btn btn-info">Login</button>
+  		</form>
+	</nav>
+<!--End Navbar-->
+
+<div class="container-fluid">
+	<div class="row boxa">
+		<div class="col-sm-3">Official Stores</div>
+		<div class="col-sm-3">Koleksi 1</div>
+		<div class="col-sm-3">Koleksi 2</div>
+		<div class="col-sm-3">Koleksi 3</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">Paling Popular</div>
+	</div>
+
+    <div class="row box">
+		<div class="col-sm-3 box1">
+			<div class="gallery">
+				<img src="img/1.jpg" width="100" height="50">
+			</div>
+		<p> Official Stores</p>
+		</div>
+
+		<div class="col-sm-3 box2">
+			<div class="gallery">
+				<img src="img/1.jpg" width="100" height="50">
+			</div>
+			<p>Koleksi 1</p>
+		</div>
+
+		<div class="col-sm-3 box3">
+			<div class="gallery">
+				<img src="img/1.jpg" width="100" height="50">
+			</div>
+			<p>Koleksi 2</p>
+		</div>
+
+		<div class="col-sm-3 box4">
+			<div class="gallery">
+				<img src="img/1.jpg" width="100" height="50">
+			</div>
+			<p>Koleksi 3</p>
+		</div>
+	</div>
+
+	<!--Konten 2-->
+	    <div class="row box">
+		<div class="col-sm-3 box1">
+			<div class="gallery">
+				<img src="img/2.jpg" width="100" height="50">
+			</div>
+		<p> Official Stores</p>
+		</div>
+
+		<div class="col-sm-3 box2">
+			<div class="gallery">
+				<img src="img/2.jpg" width="100" height="50">
+			</div>
+			<p>Koleksi 1</p>
+		</div>
+
+		<div class="col-sm-3 box3">
+			<div class="gallery">
+				<img src="img/2.jpg" width="100" height="50">
+			</div>
+			<p>Koleksi 2</p>
+		</div>
+
+		<div class="col-sm-3 box4">
+			<div class="gallery">
+				<img src="img/2.jpg" width="100" height="50">
+			</div>
+			<p>Koleksi 3</p>
+		</div>
+	</div>
+
+
+
+
+
+</div>
 
 </body>
 </html>
