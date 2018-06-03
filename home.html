@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap 4 Example</title>
+  <title>Toko Online</title>
+<!--Bootstrap-->  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<!--END Bootstrap-->
+
+<!--Font Awesome-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<!--END Font Awesome-->
+
+<!--Style CSS-->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+<!--END Style CSS-->
 </head>
 
 <body>
@@ -34,49 +43,108 @@
   		<form class="form-inline" action="/action_page.php">
     		<input class="form-control mr-sm-2" type="text" placeholder="Search">
     		<button class="btn btn-success" type="submit">Search</button> &emsp;
-    		<button type="button" class="btn btn-info">Login</button>
+    		<button type="button" class="btn btn-info">Login</button>&emsp;
   		</form>
+
+<!--Navbar Dropdown-->
+  		<div class="menu-nav-container">
+
+  			<button type="button" class="btn btn-primary">Kategori</button>
+  			<button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+    		<span class="action"></span>
+  			</button>
+  		<div class="dropdown-menu">
+   			 <a class="dropdown-item" href="#">Diskon Ramadan</a>
+   			 <a class="dropdown-item" href="#">Diskon Hari Raya</a>
+  		</div>
+		</div>
+
 	</nav>
 <!--End Navbar-->
 
+<!--SLIDESHOW-->
+
+<div class="container mt-3">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active gallery2">
+      <img src="img/1.jpg" alt="Los Angeles" width="100" height="100">
+      Keterangan Produk 1
+    </div>
+    <div class="carousel-item gallery2">
+      <img src="img/2.jpg" alt="Chicago" width="100" height="100">
+      Keterangan Produk 2
+    </div>
+    <div class="carousel-item gallery2">
+      <img src="img/3.jpg" alt="New York" width="100" height="100">
+      Keterangan Produk 3
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+</div>
+
+<!--END SLIDESHOW-->
+
+<!--Menu Box-->
+
 <div class="container-fluid">
 	<div class="row boxa">
-		<div class="col-sm-3">Official Stores</div>
-		<div class="col-sm-3">Koleksi 1</div>
-		<div class="col-sm-3">Koleksi 2</div>
-		<div class="col-sm-3">Koleksi 3</div>
+		<div class="col-sm-3"><i class="fas fa-cart-arrow-down"></i> Official Stores</div>
+		<div class="col-sm-3"><i class="fas fa-gem"></i> Koleksi 1</div>
+		<div class="col-sm-3"><i class="fas fa-gem"></i> Koleksi 2</div>
+		<div class="col-sm-3"><i class="fas fa-gem"></i> Koleksi 3</div>
 	</div>
-	<div class="row">
-		<div class="col-sm-12">Paling Popular</div>
+
+<!--Popular Content-->
+	<div class="row boxb">
+		<div class="col-sm-12"><h4>Paling Populer</h4></div>
 	</div>
 
     <div class="row box">
 		<div class="col-sm-3 box1">
 			<div class="gallery">
-				<img src="img/1.jpg" width="100" height="50">
+				<img src="img/1.jpg" width="100" height="50" align="left">
+				<p>Official Stores</p>
 			</div>
-		<p> Official Stores</p>
 		</div>
 
 		<div class="col-sm-3 box2">
 			<div class="gallery">
-				<img src="img/1.jpg" width="100" height="50">
+				<img src="img/1.jpg" width="100" height="50" align="left">
+				<p>Koleksi 1</p>
 			</div>
-			<p>Koleksi 1</p>
 		</div>
 
 		<div class="col-sm-3 box3">
 			<div class="gallery">
-				<img src="img/1.jpg" width="100" height="50">
+				<img src="img/1.jpg" width="100" height="50" align="left">
+				<p>Koleksi 2</p>
 			</div>
-			<p>Koleksi 2</p>
 		</div>
 
 		<div class="col-sm-3 box4">
 			<div class="gallery">
-				<img src="img/1.jpg" width="100" height="50">
+				<img src="img/1.jpg" width="100" height="50" align="left">
+				<p>Koleksi 3</p>
 			</div>
-			<p>Koleksi 3</p>
 		</div>
 	</div>
 
@@ -84,38 +152,171 @@
 	    <div class="row box">
 		<div class="col-sm-3 box1">
 			<div class="gallery">
-				<img src="img/2.jpg" width="100" height="50">
+				<img src="img/2.jpg" width="100" height="50" align="left">
+				<p> Official Stores</p>
 			</div>
-		<p> Official Stores</p>
 		</div>
 
 		<div class="col-sm-3 box2">
 			<div class="gallery">
-				<img src="img/2.jpg" width="100" height="50">
+				<img src="img/2.jpg" width="100" height="50" align="left">
+				<p>Koleksi 1</p>
 			</div>
-			<p>Koleksi 1</p>
 		</div>
 
 		<div class="col-sm-3 box3">
 			<div class="gallery">
-				<img src="img/2.jpg" width="100" height="50">
+				<img src="img/2.jpg" width="100" height="50" align="left">
+				<p>Koleksi 2</p>
 			</div>
-			<p>Koleksi 2</p>
 		</div>
 
 		<div class="col-sm-3 box4">
 			<div class="gallery">
-				<img src="img/2.jpg" width="100" height="50">
+				<img src="img/2.jpg" width="100" height="50" align="left">
+				<p>Koleksi 3</p>
 			</div>
-			<p>Koleksi 3</p>
+		</div>
+	</div>
+<!--END Popular Content-->
+
+<!--Diskon Content-->
+	<div class="row boxb">
+		<div class="col-sm-12"><h4>Diskon</h4></div>
+	</div>
+
+    <div class="row box">
+		<div class="col-sm-3 box1">
+			<div class="gallery">
+				<img src="img/1.jpg" width="100" height="50" align="left">
+				<p>Official Stores</p>
+			</div>
+		</div>
+
+		<div class="col-sm-3 box2">
+			<div class="gallery">
+				<img src="img/1.jpg" width="100" height="50" align="left">
+				<p>Koleksi 1</p>
+			</div>
+		</div>
+
+		<div class="col-sm-3 box3">
+			<div class="gallery">
+				<img src="img/1.jpg" width="100" height="50" align="left">
+				<p>Koleksi 2</p>
+			</div>
+		</div>
+
+		<div class="col-sm-3 box4">
+			<div class="gallery">
+				<img src="img/1.jpg" width="100" height="50" align="left">
+				<p>Koleksi 3</p>
+			</div>
 		</div>
 	</div>
 
+	<!--Konten 2-->
+	    <div class="row box">
+		<div class="col-sm-3 box1">
+			<div class="gallery">
+				<img src="img/2.jpg" width="100" height="50" align="left">
+				<p> Official Stores</p>
+			</div>
+		</div>
 
+		<div class="col-sm-3 box2">
+			<div class="gallery">
+				<img src="img/2.jpg" width="100" height="50" align="left">
+				<p>Koleksi 1</p>
+			</div>
+		</div>
 
+		<div class="col-sm-3 box3">
+			<div class="gallery">
+				<img src="img/2.jpg" width="100" height="50" align="left">
+				<p>Koleksi 2</p>
+			</div>
+		</div>
 
+		<div class="col-sm-3 box4">
+			<div class="gallery">
+				<img src="img/2.jpg" width="100" height="50" align="left">
+				<p>Koleksi 3</p>
+			</div>
+		</div>
+	</div>
+<!--END Diskon Content-->
+
+<!--Flash Sale-->
+	<div class="row boxb">
+		<div class="col-sm-12"><h4>Flash Sale</h4></div>
+	</div>
+
+    <div class="row box">
+		<div class="col-sm-2 box1">
+			<div class="gallery">
+				<img src="img/1.jpg" width="100" height="50" align="left">
+				<p>Official Stores</p>
+			</div>
+		</div>
+
+		<div class="col-sm-2 box2">
+			<div class="gallery">
+				<img src="img/1.jpg" width="100" height="50" align="left">
+				<p>Koleksi 1</p>
+			</div>
+		</div>
+
+		<div class="col-sm-2 box3">
+			<div class="gallery">
+				<img src="img/1.jpg" width="100" height="50" align="left">
+				<p>Koleksi 2</p>
+			</div>
+		</div>
+
+		<div class="col-sm-2 box4">
+			<div class="gallery">
+				<img src="img/1.jpg" width="100" height="50" align="left">
+				<p>Koleksi 3</p>
+			</div>
+		</div>
+		<div class="col-sm-2 box3">
+			<div class="gallery">
+				<img src="img/1.jpg" width="100" height="50" align="left">
+				<p>Koleksi 2</p>
+			</div>
+		</div>
+
+		<div class="col-sm-2 box4">
+			<div class="gallery">
+				<img src="img/1.jpg" width="100" height="50" align="left">
+				<p>Koleksi 3</p>
+			</div>
+		</div>
+	</div>
+<!--END Flash Sale-->
 
 </div>
+<!--END Menu Box-->
+
+<!--Footer-->
+<br>
+<div class="footer" >
+  <p>Metode Pembayaran</p>
+  		<img src="img/b1.jpg" width="45" height="25"> &emsp;
+  		<img src="img/b2.png" width="45" height="25">&emsp;
+  		<img src="img/b3.png" width="45" height="25">&emsp;
+  		<img src="img/b1.png" width="45" height="25">
+  		<br><br>
+
+  <p>Jasa Pengiriman</p>
+  		<img src="img/p1.jpg" width="50" height="35"> &emsp;
+  		<img src="img/p2.jpg" width="50" height="35"> &emsp;
+  		<img src="img/p3.jpg" width="50" height="35"> &emsp;
+  		<img src="img/p4.jpg" width="50" height="35"> &emsp;
+  		<img src="img/p5.png" width="50" height="35"> &emsp;
+</div>
+<!--END Footer-->
 
 </body>
 </html>

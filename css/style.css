@@ -1,9 +1,22 @@
+/*Style Box*/
+.carousel-inner img {
+      width: 100%;
+      height: 100%;
+}
+/*END Style Box*/
+
 .boxa{
 	width: auto;
 	height: auto;
 	background: #7FFFD4;
 	text-align: center;
 	padding: 15px;
+}
+.boxb{
+	width: auto;
+	height: auto;
+	background:;
+	padding-top: 30px;
 }
 .box{
 	margin: 0 auto;
@@ -13,52 +26,85 @@
 	text-align: center;
 	padding: 2px;
 }
-
 .box1{
 
 	width: auto;
 	height: auto;
 	background: #00FFFF;
 	text-align: center;
-	padding: 15px;
-
+	padding: 5px;
 }
-
 .box2{
 
 	width: auto;
 	height: auto;
 	background: #7FFFD4;
 	text-align: center;
-	padding: 15px;
+	padding: 5px;
 }
-
 .box3{
 
 	width: auto;
 	height: auto;
 	background: #FAEBD7;
 	text-align: center;
-	padding: 15px;
+	padding: 5px;
 }
-
 .box4{
 
 	width: auto;
 	height: auto;
 	background: #FFE4C4;
 	text-align: center;
-	padding: 15px;
+	padding: 5px;
 }
+/*END Style Box*/
 
+/*Style Image*/
 .gallery{
 	margin:0 auto;
-	border:1px solid #000;
+	border:1px solid #fff;
 	float: left;
 	width: 100%;
 }
-
+.gallery:hover{
+	border:1px solid #FFE4C4;
+}
 .gallery img{
 	width: 30%;
 	height: 30%;
 }
+.gallery2{
+	margin:0 auto;
+	border:1px solid #fff;
+	float: all;
+	width: 100%;
+}
+.gallery2 img{
+	width: 30%;
+	height: 30%;
+}
+/*END Style Image*/
+
+
+/*footer*/
+.footer {
+    position:relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2f4f4f;
+    color: white;
+    text-align: left;
+    padding: 30px;
+}
+.fo1{
+	text-align: left;
+}
+
+.fo2{
+	text-align: right;
+	margin: 90;
+
+}
+/*END footer*/
