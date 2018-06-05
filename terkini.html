@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>OUR SHOP</title>
+<!--Bootstrap-->  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link href="images/logo.png" rel="shortcut icon">
+<!--END Bootstrap-->
+
+<!--Font Awesome-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<!--END Font Awesome-->
+
+<!--Style CSS-->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+<!--END Style CSS-->
+
+<!--Script Angular-->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+  <script type="text/javascript">
+  var app = angular.module("MyApp", ["ngRoute"]); 
+  app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+      templateUrl : "official.htm"
+    })
+    .when("/official", {
+      templateUrl : "official.htm"
+    })
+    .when("/gadget", {
+      templateUrl : "gadget.htm"
+    })
+    .when("/pakaian", {
+      templateUrl : "pakaian.htm"
+    })
+    .when("/makanan", {
+      templateUrl : "makanan.htm"
+    });
+  });
+  </script>
+<!--Script Angular-->
+
+</head>
+
+<body>
+<!--Menu Box-->
+
+<!--NAVBAR-->
+<nav class="navbar navbar-expand-sm bg-blue navbar-blue">
+  <a class="navbar-brand" href="home.html"><i class="fas fa-home"></i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="home.html"><i class="fas fa-home"></i>Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link3</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+<!--END NAVBAR--> 
+
+
+<!--bawah
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  		<form class="form-inline" action="/action_page.php">
+  			</button>
+	      <a class="navbar-brand" href="#myPage">Logo</a>
+    		<input class="form-control mr-sm-2" type="text" placeholder="Search">
+    		<button class="btn btn-success" type="submit">Search</button> &emsp;
+    		<button type="button" class="btn btn-info">Login</button>&emsp;
+  		</form>
+  		</div>
+		</div>
+
+	</nav>
+<End Navbar-->
+<div ng-app="MyApp" class="container-fluid">
+    <div class="row boxa">
+      <div class="col-3 text-center separator">
+        <a href="#!official" style="color: #fff;">Jeans</a> 
+      </div>
+      <div class="col-3 text-center separator">
+        <a href="#!gadget" style="color: #fff;">Batik</a>
+      </div>
+      <div class="col-3 text-center separator">
+        <a href="#!pakaian" style="color: #fff;">Remaja</a> 
+      </div>
+      <div class="col-3 text-center separator">
+        <a href="#!makanan" style="color: #fff;">Anak-anak</a>
+      </div>  
+
+         
+        
+        
+    </div>
+<!--Tampilan Angular-->
+<ng-view></ng-view>
+<!--Tampilan Angular-->
+
+</div>
+
+
+<!--Flash Sale-->
+  <div class="row boxb">
+    <div class="col-sm-12"><h4>Serba Dibawah Rp. 100.000,-</h4></div>
+  </div>
+
+    <div class="row box">
+    <div class="col-sm-2 box1">
+      <div class="gallery">
+        <img src="img/hb1.jpg" width="100" height="50" align="left">
+        <p>Audio Technica ATH-CLR100is - Black</p>
+        <button type="button" class="btn btn-default">Rp 85,000</button>
+      </div>
+    </div>
+
+    <div class="col-sm-2 box2">
+      <div class="gallery">
+        <img src="img/hb2.jpg" width="100" height="50" align="left">
+        <p>LOGITECH Optical Mouse M105-Black</p>
+         <button type="button" class="btn btn-default">Rp 77,000</button>
+      </div>
+    </div>
+
+    <div class="col-sm-2 box3">
+      <div class="gallery">
+        <img src="img/hb3.jpg" width="100" height="50" align="left">
+        <p>MICROPACK BT - 369 Blue Tech Mouse - White Gray</p>
+        <button type="button" class="btn btn-default">Rp 60,000</button>
+      </div>
+    </div>
+
+    <div class="col-sm-2 box4">
+      <div class="gallery">
+        <img src="img/hb4.jpg" width="100" height="50" align="left">
+        <p>XIAOMI Mi Basic In-Ear Headphone with Mic - Silver</p>
+        <button type="button" class="btn btn-default">Rp 79,000</button>
+      </div>
+    </div>
+    <div class="col-sm-2 box3">
+      <div class="gallery">
+        <img src="img/hb5.jpg" width="100" height="50" align="left">
+        <p>Dr. Kevin Women Slip On 5312 - Black 36</p>
+        <button type="button" class="btn btn-default">Rp 89,000</button>
+      </div>
+    </div>
+
+    <div class="col-sm-2 box4">
+      <div class="gallery">
+        <img src="img/hb6.jpg" width="100" height="50" align="left">
+        <p>Baseus iPhone X Gradient 9H Tempered Glass Back Film</p>
+        <button type="button" class="btn btn-default">Rp 75,000</button>
+      </div>
+    </div>
+  </div>
+<!--END Flash Sale-->
+
+</div>
+<!--END Menu Box-->
+
+<!--Footer-->
+<br>
+<div class="footer" >
+	<div class="row box">
+		<div class="col-sm-4">
+  			<p>Metode Pembayaran</p>
+  			<img src="img/b1.jpg" width="70" height="35">
+  			<img src="img/b2.png" width="70" height="35">
+  			<img src="img/b3.png" width="70" height="35">
+  			<img src="img/b1.png" width="70" height="35">
+  		<br><br>
+  		</div>
+  	<div class="col-sm-4">
+  			<p>Jasa Pengiriman</p>
+  			<img src="img/p1.jpg" width="70" height="35">
+  			<img src="img/p2.jpg" width="70" height="35">
+  			<img src="img/p3.jpg" width="70" height="35">
+  			<img src="img/p4.jpg" width="70" height="35">
+  			<img src="img/p5.png" width="70" height="35">
+  	</div>
+  	<div class="col-sm-4">
+  			<p>Layanan Pelanggan</p>
+        <p>Bantuan ||
+            Pembayaran ||
+            Koin ||
+            Lacak Pesanan Pembeli ||
+            Lacak Pengiriman Penjual ||
+            Gratis Ongkir ||
+            Pengembalian Barang & Dana ||
+            Garansi ||
+            Hubungi Kami ||
+          </p>
+  			<img src="">
+</div>
+<!--END Footer-->
+
+</body>
+</html>

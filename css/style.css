@@ -8,15 +8,18 @@
 .boxa{
 	width: auto;
 	height: auto;
-	background: #7FFFD4;
+	background: #0054a3;
 	text-align: center;
-	padding: 15px;
+	padding: 8px;
+	color: white;
 }
 .boxb{
 	width: auto;
 	height: auto;
 	background:;
 	padding-top: 30px;
+	text-align: center;
+	color: #0054a3;
 }
 .box{
 	margin: 0 auto;
@@ -24,51 +27,60 @@
 	height: auto;
 	background: ;
 	text-align: center;
-	padding: 2px;
+	padding: 7px;
 }
 .box1{
 
 	width: auto;
 	height: auto;
-	background: #00FFFF;
+	background: #0faee2;
 	text-align: center;
+	font-family: Tw Cen MT Condensed;
+	color: white;
 	padding: 5px;
 }
 .box2{
 
 	width: auto;
 	height: auto;
-	background: #7FFFD4;
+	background: #0faee2;
 	text-align: center;
+	color: white;
+	font-family: Tw Cen MT Condensed;
 	padding: 5px;
 }
 .box3{
 
 	width: auto;
 	height: auto;
-	background: #FAEBD7;
+	background: #0faee2;
 	text-align: center;
+	font-family: Tw Cen MT Condensed;
+	color: white;
 	padding: 5px;
 }
 .box4{
 
 	width: auto;
 	height: auto;
-	background: #FFE4C4;
+	background: #0faee2;
 	text-align: center;
+	font-family: Tw Cen MT Condensed;
+	color: white;
 	padding: 5px;
 }
 /*END Style Box*/
 
+
 /*Style Image*/
 .gallery{
 	margin:0 auto;
-	border:1px solid #fff;
+	border:1px solid #00a6dd;
 	float: left;
 	width: 100%;
 }
 .gallery:hover{
-	border:1px solid #FFE4C4;
+	border:1px solid #00a6dd;
 }
 .gallery img{
 	width: 30%;
@@ -81,8 +93,8 @@
 	width: 100%;
 }
 .gallery2 img{
-	width: 30%;
-	height: 30%;
+	width: 50%;
+	height: 50%;
 }
 /*END Style Image*/
 
@@ -93,10 +105,11 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #2f4f4f;
+    background-color: #0054a3;
     color: white;
     text-align: left;
     padding: 30px;
+    font-family: Bell Gothic Std Light;
 }
 .fo1{
 	text-align: left;
